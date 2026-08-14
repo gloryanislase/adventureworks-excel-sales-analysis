@@ -12,11 +12,11 @@ An Excel-based **sales analytics and dashboarding project** using the Adventure 
 
 ### Time Series Dashboard
 
-![Time Series Dashboard](./assets/time_series_dashboard.png)
+![Time Series Dashboard](./assets/time_series_dashboard_overview.png)
 
 ### Product & Customer Analysis
 
-![Product & Customer Dashboard](./assets/detail_dashboard.png)
+![Product & Customer Dashboard](./assets/detail_dashboard_by_product_&_customer.png)
 
 ## 📊 Key Findings
 
