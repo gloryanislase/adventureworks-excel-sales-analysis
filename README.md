@@ -4,8 +4,6 @@
 [![Data Analysis](https://img.shields.io/badge/Data_Analysis-005571?style=for-the-badge)](#)
 [![Dashboard](https://img.shields.io/badge/Dashboard-0F6CBD?style=for-the-badge)](#)
 
-## 📌 Project Overview
-
 An Excel-based **sales analytics and dashboarding project** using the Adventure Works dataset to analyze revenue, profitability, product performance, customer contribution, and time-based trends. The project demonstrates practical **Advanced Excel skills** through formula-driven analysis, lookup and ranking functions, helper tables, dynamic KPI calculations, and interactive dashboard design. The goal is to transform transactional data into concise business insights using Microsoft Excel.
 
 ## 📸 Dashboard Preview
@@ -18,6 +16,34 @@ An Excel-based **sales analytics and dashboarding project** using the Adventure 
 
 ![Product & Customer Dashboard](./assets/detail_dashboard_by_product_&_customer.png)
 
+---
+
+## 📌 About This Project
+**Objective**   
+Build an end-to-end Excel sales dashboard that's functionally on par with a Power BI dashboard — complete with a relational data model, DAX calculations, and multi-page navigation — to show that Excel can be a serious BI tool, not just a static spreadsheet.
+
+**Methodology**  
+Raw AdventureWorksDW data was cleaned with **Power Query** (one query per table), loaded into the **Data Model (Power Pivot)**, and connected in a **star schema** (`FactInternetSales` as the fact table, with 5 dimension tables around it). Every core metric is computed as a **DAX measure** (not a static column) so it recalculates automatically with the active slicer selection. Visuals are built from a combination of **PivotTable + PivotChart + Slicer**, restyled to resemble a modern dashboard layout. Cross-dashboard navigation and the Clear Filter button run on a **VBA macro** that resets every `SlicerCache`.
+
+---
+
+## 📂 Repository Structure
+
+```text
+adventureworks-excel-sales-analysis/
+│
+├── README.md
+├── LICENSE
+│
+├── workbook/
+│   └── Dashboard Master Class_AdventureWorksSales.xlsm
+│
+└── assets/
+    ├── time_series_dashboard.png
+    └── detail_dashboard.png
+```
+
+---
 ## 📊 Key Findings
 
 ### 1. Strong revenue and profit growth
@@ -80,21 +106,7 @@ The analysis highlights several patterns that can support further business inves
 * Data Analysis
 * Dashboarding & Data Visualization
 
-## 📂 Repository Structure
 
-```text
-adventureworks-excel-sales-analysis/
-│
-├── README.md
-├── LICENSE
-│
-├── workbook/
-│   └── AdventureWorks_Excel_Sales_Analysis.xlsx
-│
-└── assets/
-    ├── time_series_dashboard.png
-    └── detail_dashboard.png
-```
 
 ## 🚀 How to Use
 
