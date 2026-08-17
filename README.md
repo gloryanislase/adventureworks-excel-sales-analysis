@@ -19,8 +19,8 @@ An Excel-based **sales analytics and dashboarding project** using the Adventure 
 ---
 
 ## 🎥 Dashboard Demo  
-Watch a short walkthrough of the interactive Excel dashboard, including filtering, dynamic metric selection, dashboard navigation, and KPI updates.
-[▶️ Watch Dashboard Demo]([https://youtu.be/5O523CglT04])
+Watch a short walkthrough of the interactive Excel dashboard, including filtering, dynamic metric selection, dashboard navigation, and KPI updates.  
+[▶️ Watch Dashboard Demo](https://youtu.be/5O523CglT04)
 
 ---
 
