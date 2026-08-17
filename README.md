@@ -6,6 +6,17 @@
 
 An Excel-based **sales analytics and dashboarding project** using the Adventure Works dataset to analyze revenue, profitability, product performance, customer contribution, and time-based trends. The project demonstrates practical **Advanced Excel skills** through formula-driven analysis, lookup and ranking functions, helper tables, dynamic KPI calculations, and interactive dashboard design. The goal is to transform transactional data into concise business insights using Microsoft Excel.
 
+---
+
+## 📌 About This Project
+**Objective**   
+Build an end-to-end Excel sales dashboard that's functionally on par with a Power BI dashboard — complete with a relational data model, DAX calculations, and multi-page navigation — to show that Excel can be a serious BI tool, not just a static spreadsheet.
+
+**Methodology**  
+Raw AdventureWorksDW data was cleaned with **Power Query** (one query per table), loaded into the **Data Model (Power Pivot)**, and connected in a **star schema** (`FactInternetSales` as the fact table, with 5 dimension tables around it). Every core metric is computed as a **DAX measure** (not a static column) so it recalculates automatically with the active slicer selection. Visuals are built from a combination of **PivotTable + PivotChart + Slicer**, restyled to resemble a modern dashboard layout. Cross-dashboard navigation and the Clear Filter button run on a **VBA macro** that resets every `SlicerCache`.
+
+---
+
 ## 📸 Dashboard Preview
 
 ### Time Series Dashboard
@@ -24,12 +35,102 @@ Watch a short walkthrough of the interactive Excel dashboard, including filterin
 
 ---
 
-## 📌 About This Project
-**Objective**   
-Build an end-to-end Excel sales dashboard that's functionally on par with a Power BI dashboard — complete with a relational data model, DAX calculations, and multi-page navigation — to show that Excel can be a serious BI tool, not just a static spreadsheet.
+## 📊 Key Findings
 
-**Methodology**  
-Raw AdventureWorksDW data was cleaned with **Power Query** (one query per table), loaded into the **Data Model (Power Pivot)**, and connected in a **star schema** (`FactInternetSales` as the fact table, with 5 dimension tables around it). Every core metric is computed as a **DAX measure** (not a static column) so it recalculates automatically with the active slicer selection. Visuals are built from a combination of **PivotTable + PivotChart + Slicer**, restyled to resemble a modern dashboard layout. Cross-dashboard navigation and the Clear Filter button run on a **VBA macro** that resets every `SlicerCache`.
+### 1. Strong revenue and profit growth  
+Revenue increased from **$33.37M in 2005** to **$101.86M in 2008**, while profit increased from **$13.40M** to **$42.16M**.
+
+### 2. Q4 dominates profitability
+
+**Q4 contributed approximately 41.4% of total profit**, with **December generating $7.57M**, the highest monthly profit in the analysis.
+
+### 3. Profit is concentrated among a small group of products
+
+The **Top-5 products generated approximately 34.9% of total profit**, led by Mountain-200 variants.
+
+### 4. Weekday sales contribute the majority of profit
+
+**Weekdays contributed 72% of total profit**, with **Wednesday–Friday accounting for 43.8%**, indicating that profitability is concentrated toward the middle and end of the working week.
+
+### 5. Customer profitability is broadly distributed
+
+The **Top-5 customers contributed only around 0.5% of total profit**, indicating low dependence on a small number of individual customers.
+
+---
+
+## 🧩 Advanced Excel & BI Techniques
+
+| Category | Tools |
+| --- | --- |
+| **Data Preparation** | Power Query |
+| **Data Modeling** | Power Pivot (Data Model), star schema |
+| **Calculations** | DAX (CALCULATE, SUMX, FILTER, DIVIDE, etc.) |
+| **Visualization** | PivotTable, PivotChart, excel chart |
+| **Interactivity** | Slicers, Metric Selector, Dashboard Navigation |
+| **Automation** | VBA Macro (navigation & Clear Filter) |
+
+### Data Model
+
+The workbook uses a **star schema** with `FactInternetSales` as the central fact table connected to:
+
+- `DimDate`
+- `DimProduct`
+- `DimCustomer`
+- `DimGeography`
+- `DimSalesTerritory`
+
+This structure allows transaction-level sales to be analyzed across time, products, customers, and geographic dimensions.
+
+---
+
+## 📊 Dashboard Pages
+
+### Time Series Dashboard  
+Provides an overview of:  
+- Revenue, Profit, COGS, Margin, Transactions, and Quantity
+- Year-level performance
+- Monthly profit
+- Weekday vs. weekend contribution
+- Quarterly profit distribution
+- Dynamic Revenue / Profit / Transaction metric selection
+
+### Product & Customer Dashboard  
+Provides:  
+- Top-5 profitable products and customers
+- Product availability analysis
+- Profit by product color
+- Price-group analysis
+- Profit contribution by age and gender
+- Country-level profit contribution
+
+### Supporting Analysis  
+The workbook also includes supporting analysis pages for:  
+- Time series analysis
+- Product analysis
+- Customer analysis
+
+These pages provide more detailed PivotTable/PivotChart views behind the main dashboards.
+
+---
+
+## 🎛️ Interactive Features
+
+- **Global Slicers:** Filter by Country, Year, and Month.
+- **Dynamic Metric Selection:** Switch between Revenue, Profit, and Transactions without creating separate charts.
+- **Cross-Filtering:** Selecting a category or data point updates related calculations and contribution metrics.
+- **Dashboard Navigation:** VBA buttons allow users to move between dashboard pages.
+- **Clear Filter:** VBA resets the active slicer selections with one click.
+
+---
+
+## 🚀 How to Use
+
+1. Download the Excel workbook from the `workbook/` folder.
+2. Open it using **Microsoft Excel Desktop**.
+3. Explore the dashboards and use the available filters to interact with the analysis.
+4. Review the supporting analysis sheets to see how the dashboard metrics are calculated.
+
+> **Dataset note:** Adventure Works is used as a sample dataset for demonstrating analytical and Advanced Excel capabilities. The project is intended as a portfolio case study rather than a representation of current market conditions.
 
 ---
 
@@ -48,80 +149,7 @@ adventureworks-excel-sales-analysis/
     ├── time_series_dashboard.png
     └── detail_dashboard.png
 ```
-
 ---
-## 📊 Key Findings
-
-### 1. Strong revenue and profit growth
-
-Revenue increased from approximately **$33.4M in 2005** to **$101.9M in 2008**, while profit increased from **$13.4M** to **$42.2M**. Profit margin remained relatively stable at around **40–42%** throughout the period.
-
-### 2. Q4 dominates profitability
-
-**Q4 contributed approximately 41.4% of total profit**, making it the strongest quarter. December was the highest-profit month, contributing approximately **$7.57M**.
-
-### 3. Profit is concentrated among a small group of products
-
-The **Top-5 products generated approximately 34.9% of total profit**, with Mountain-200 variants among the leading contributors.
-
-### 4. Geographic contribution is concentrated
-
-**Australia and the United States contributed approximately 60.1% of total profit combined**, indicating a strong concentration of profitability across these markets.
-
-### 5. Customer profitability is broadly distributed
-
-The **Top-5 customers contributed only around 0.5% of total profit**, suggesting that overall profitability is not heavily dependent on a small number of individual customers.
-
-## 🧩 Advanced Excel Skills
-
-| Area                        | Techniques                                                    |
-| --------------------------- | ------------------------------------------------------------- |
-| **Lookup & Reference**      | `VLOOKUP`, `INDEX`, `MATCH`                                   |
-| **Conditional Logic**       | `IF`, `IFS`, `IFERROR`                                        |
-| **Ranking & Aggregation**   | `LARGE`, `SUM`, `AVERAGE`, `COUNTA`                           |
-| **Analytical Calculations** | YoY comparison, profit contribution, margins, ratios          |
-| **Dashboarding**            | KPI cards, charts, filters, dynamic selections                |
-| **Excel Modeling**          | Helper tables, named ranges, formula-driven calculation layer |
-
-The workbook separates analytical calculations from dashboard presentation, allowing the visual components to update dynamically based on user selections.
-
-## 🎛️ Dashboard & Analysis
-
-The workbook combines several analytical views:
-
-* **Time Series Analysis:** revenue, profit, COGS, transactions, order quantity, monthly and quarterly trends, and year-over-year comparisons.
-* **Product Analysis:** top profitable products, profit concentration, product color, and price-group performance.
-* **Customer Analysis:** top profitable customers, age-group contribution, gender, and country-level profitability.
-* **Interactive Dashboarding:** dynamic KPI reporting with year, month, and country selections.
-
-## 💡 Business Insights
-
-The analysis highlights several patterns that can support further business investigation:
-
-* Profitability is strongly concentrated toward the end of the year.
-* A relatively small number of products contributes a substantial share of total profit.
-* Higher-priced products account for the majority of observed profit.
-* Overall customer profitability is broadly distributed rather than dependent on a few customers.
-* Profit contribution varies considerably across countries.
-
-## 🛠️ Tools & Technologies
-
-* **Microsoft Excel**
-* Advanced Excel Formulas
-* Lookup & Reference Functions
-* Data Analysis
-* Dashboarding & Data Visualization
-
-
-
-## 🚀 How to Use
-
-1. Download the Excel workbook from the `workbook/` folder.
-2. Open it using **Microsoft Excel Desktop**.
-3. Explore the dashboards and use the available filters to interact with the analysis.
-4. Review the supporting analysis sheets to see how the dashboard metrics are calculated.
-
-> **Dataset note:** Adventure Works is used as a sample dataset for demonstrating analytical and Advanced Excel capabilities. The project is intended as a portfolio case study rather than a representation of current market conditions.
 
 ## 📬 Contact
 
