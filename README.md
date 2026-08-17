@@ -125,12 +125,13 @@ These pages provide more detailed PivotTable/PivotChart views behind the main da
 
 ## 🚀 How to Use
 
-1. Download the Excel workbook from the `workbook/` folder.
-2. Open it using **Microsoft Excel Desktop**.
-3. Explore the dashboards and use the available filters to interact with the analysis.
-4. Review the supporting analysis sheets to see how the dashboard metrics are calculated.
+1. Download `AdventureWorks_Excel_Sales_Analysis.xlsm` from the repository.
+2. Open the workbook in **Microsoft Excel Desktop** and enable macros when prompted.
+3. Use the slicers to explore the dashboard by Country, Year, and Month.
+4. Use the navigation buttons to switch between dashboard views.
+5. Explore the supporting analysis sheets to inspect the underlying calculations and PivotTables.
 
-> **Dataset note:** Adventure Works is used as a sample dataset for demonstrating analytical and Advanced Excel capabilities. The project is intended as a portfolio case study rather than a representation of current market conditions.
+> **Dataset note:** Adventure Works is a sample dataset used to demonstrate Advanced Excel and BI capabilities. The project is intended as a portfolio case study rather than an analysis of current market conditions.
 
 ---
 
@@ -149,6 +150,7 @@ adventureworks-excel-sales-analysis/
     ├── time_series_dashboard.png
     └── detail_dashboard.png
 ```
+
 ---
 
 ## 📬 Contact
