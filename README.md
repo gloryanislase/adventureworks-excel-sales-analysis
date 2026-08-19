@@ -162,5 +162,5 @@ adventureworks-excel-sales-analysis/
 
 Open to opportunities related to **Data Analyst, Business Intelligence, and Analytics** roles.
 
-* **LinkedIn:** [linkedin.com/in/gloryanisveronicalase](https://linkedin.com/in/gloryanisveronicalase)
-* **Email:** [gloryanislase@gmail.com](mailto:gloryanislase@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gloryanisveronicalase)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gloryanislase@gmail.com)
