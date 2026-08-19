@@ -43,6 +43,9 @@ Watch a short walkthrough of the interactive Excel dashboard, including filterin
 **Objective**   
 Build an end-to-end Excel sales dashboard that's functionally on par with a Power BI dashboard — complete with a relational data model, DAX calculations, and multi-page navigation — to show that Excel can be a serious BI tool, not just a static spreadsheet.
 
+**Data**
+The raw source file (`Data/AdventureWorks.xlsx`) is included in this repository for transparency. It is Microsoft's publicly available AdventureWorksDW sample dataset, commonly used for BI and analytics practice — all cleaning, modeling, and transformation into the dashboard is done entirely within the workbook via Power Query, not pre-processed elsewhere.
+
 **Methodology**  
 Raw AdventureWorksDW data was cleaned with **Power Query** (one query per table), loaded into the **Data Model (Power Pivot)**, and connected in a **star schema** (`FactInternetSales` as the fact table, with 5 dimension tables around it). Every core metric is computed as a **DAX measure** (not a static column) so it recalculates automatically with the active slicer selection. Visuals are built from a combination of **PivotTable + PivotChart + Slicer**, restyled to resemble a modern dashboard layout. Cross-dashboard navigation and the Clear Filter button run on a **VBA macro** that resets every `SlicerCache`.
 
