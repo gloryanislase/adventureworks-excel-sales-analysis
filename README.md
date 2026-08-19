@@ -148,6 +148,8 @@ Provides:
 adventureworks-excel-sales-analysis/
 ├── README.md
 ├── LICENSE
+├── Data/
+│   └── AdventureWorks.xlsx
 ├── assets/
 │   ├── time_series_dashboard_overview.png
 │   └── detail_dashboard_by_product_&_customer.png
