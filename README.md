@@ -43,7 +43,7 @@ Watch a short walkthrough of the interactive Excel dashboard, including filterin
 **Objective**   
 Build an end-to-end Excel sales dashboard that's functionally on par with a Power BI dashboard — complete with a relational data model, DAX calculations, and multi-page navigation — to show that Excel can be a serious BI tool, not just a static spreadsheet.
 
-**Data**
+**Data**  
 The raw source file (`Data/AdventureWorks.xlsx`) is included in this repository for transparency. It is Microsoft's publicly available AdventureWorksDW sample dataset, commonly used for BI and analytics practice — all cleaning, modeling, and transformation into the dashboard is done entirely within the workbook via Power Query, not pre-processed elsewhere.
 
 **Methodology**  
