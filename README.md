@@ -74,6 +74,7 @@ The workbook uses a **star schema** with `FactInternetSales` as the central fact
 - `DimCustomer`
 - `DimGeography`
 - `DimSalesTerritory`  
+
 This structure allows transaction-level sales to be analyzed across time, products, customers, and geographic dimensions.
 
 ---
