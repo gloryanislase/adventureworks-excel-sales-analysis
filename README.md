@@ -10,7 +10,7 @@ An Excel-based **sales analytics and dashboarding project** using the Adventure 
 
 ## 📑 Table of Contents
 
-- [📸 Dashboard Preview](#-dashboard-preview)
+- [Dashboard Preview](#-dashboard-preview)
 - [Dashboard Demo](#-dashboard-demo)
 - [About This Project](#-about-this-project)
 - [Advanced Excel & BI Techniques](#-advanced-excel--bi-techniques)
