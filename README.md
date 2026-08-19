@@ -150,7 +150,7 @@ adventureworks-excel-sales-analysis/
 ├── LICENSE
 ├── assets/
 │   ├── time_series_dashboard_overview.png
-│   ├── detail_dashboard_by_product_&_customer.png
+│   └── detail_dashboard_by_product_&_customer.png
 └── Dashboard_Master_Class_AdventureWorksSales.xlsm
 ```
 
