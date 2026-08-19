@@ -35,7 +35,7 @@ An Excel-based **sales analytics and dashboarding project** using the Adventure 
 
 ## 🎥 Dashboard Demo
 Watch a short walkthrough of the interactive Excel dashboard, including filtering, dynamic metric selection, dashboard navigation, and KPI updates.
-[▶️ Watch Dashboard Demo](https://youtu.be/50523Cg1T04)
+[▶️ Watch Dashboard Demo](https://youtu.be/5O523CglT04)
 
 ---
 
@@ -150,7 +150,7 @@ adventureworks-excel-sales-analysis/
 ├── LICENSE
 ├── assets/
 │   ├── time_series_dashboard_overview.png
-│   ├── detail_dashboard_by_product_customer.png
+│   ├── detail_dashboard_by_product_&_customer.png
 └── Dashboard_Master_Class_AdventureWorksSales.xlsm
 ```
 
